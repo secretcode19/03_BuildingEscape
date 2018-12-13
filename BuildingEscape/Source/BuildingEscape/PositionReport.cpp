@@ -1,6 +1,7 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright NineTeen West 2018.
 
 #include "PositionReport.h"
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UPositionReport::UPositionReport()
@@ -18,8 +19,11 @@ void UPositionReport::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	FString ObjectName = GetOwner()->GetFName().ToString();
+	FString ObjectLocation = GetOwner()->GetActorLocation().ToString();
+	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("Position report reporting for duty %s, ObjectLocations=%s!"), *ObjectName, *ObjectLocation);
+	UE_LOG(LogTemp, Warning, TEXT("ObjectPos = %s!"), *ObjectPos);
 }
 
 

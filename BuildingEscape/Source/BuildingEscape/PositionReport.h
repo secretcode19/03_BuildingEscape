@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright NineTeen West 2018.
 
 #pragma once
 
