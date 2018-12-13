@@ -5,6 +5,7 @@ BuildingEscape/Binaries/
 BuildingEscape/Intermediate/
 BuildingEscape/Saved/
 BuildingEscape/Content/StarterContent/
+*.ipch
 
 ######################
 # VS Generated Files #
